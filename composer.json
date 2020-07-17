@@ -1,0 +1,35 @@
+{
+  "name": "czachor/polish-id-validators",
+  "description": "Validators for different identification numbers: PWZ, PWZF...",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "czachor",
+      "email": "f@czachorowski.pro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Czachor\\PolishIdValidators\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Czachor\\Tests\\PolishIdValidators\\": "tests"
+    }
+  },
+  "version": "0.1-dev",
+  "require": {
+    "php": "^7.2",
+    "ronanguilloux/isocodes": "^2.2",
+    "symfony/translation": "^5.1",
+    "symfony/validator": "^5.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^9.2"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
