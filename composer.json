@@ -19,7 +19,6 @@
       "Czachor\\Tests\\PolishIdValidators\\": "tests"
     }
   },
-  "version": "0.1",
   "require": {
     "php": "^7.2",
     "ronanguilloux/isocodes": "^2.2",
