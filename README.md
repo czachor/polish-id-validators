@@ -1,5 +1,5 @@
 # Polish ID Validators
-Version: 0.1
+Version: 1.0
 
 PHP library based on [Symfony Validator Component](https://symfony.com/doc/master/components/validator.html) to validate various medical identification numbers used in Poland.
 
