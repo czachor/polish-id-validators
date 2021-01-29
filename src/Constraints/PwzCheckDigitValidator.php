@@ -24,6 +24,15 @@ class PwzCheckDigitValidator extends ConstraintValidator
             throw new UnexpectedValueException($value, 'string');
         }
 
+        if (preg_match('#[^0-9]#', $value)) {
+            $this->context->buildViolation($constraint->message)
+                ->setParameter('{{ string }}', $value)
+                ->setCode('INVALID_CHECK_DIGIT')
+                ->addViolation();
+
+            return;
+        }
+
         $original = $value;
         $check_digit = (int) $value[0];
         $value = substr($value, 1); // remove check digit
