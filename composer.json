@@ -21,12 +21,12 @@
   },
   "require": {
     "php": "^7.2",
-    "ronanguilloux/isocodes": "^2.2",
+    "ronanguilloux/isocodes": "^2.3",
     "symfony/translation": "^5.1",
     "symfony/validator": "^5.1"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master",
+    "roave/security-advisories": "dev-latest",
     "phpunit/phpunit": "^9.2"
   },
   "config": {
