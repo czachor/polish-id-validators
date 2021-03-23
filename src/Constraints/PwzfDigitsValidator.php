@@ -2,7 +2,7 @@
 
 namespace Czachor\PolishIdValidators\Constraints;
 
-use IsoCodes\Ean8;
+use IsoCodes\Gtin8;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
@@ -64,7 +64,7 @@ class PwzfDigitsValidator extends ConstraintValidator
         $this->value = $value;
 
         $this->checkLocalChamberDigists();
-        $this->validateEan8();
+        $this->validateGtin8();
 
         if ($this->is_error) {
             $this->context->buildViolation($constraint->message)
@@ -82,9 +82,9 @@ class PwzfDigitsValidator extends ConstraintValidator
         }
     }
 
-    private function validateEan8(): void
+    private function validateGtin8(): void
     {
-        if (!Ean8::check($this->value, 8)) {
+        if (!Gtin8::check($this->value, 8)) {
             $this->is_error = false;
         }
     }
