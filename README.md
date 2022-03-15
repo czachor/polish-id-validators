@@ -1,5 +1,7 @@
-# Polish ID Validators
-Version: 1.0
+# [DEPRECATED] Polish ID Validators
+Version: 1.3
+
+Pcackage is currently marked as deprecated. A new version is coming soon.
 
 PHP library based on [Symfony Validator Component](https://symfony.com/doc/master/components/validator.html) to validate various medical identification numbers used in Poland.
 
